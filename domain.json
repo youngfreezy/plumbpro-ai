@@ -1,0 +1,57 @@
+{
+  "business_type": "plumbing",
+  "app_name": "PlumbPro AI",
+  "tagline": "AI-powered plumbing business management",
+  "labels": {
+    "technician": "Plumber",
+    "technician_plural": "Plumbers",
+    "job": "Service Call",
+    "job_plural": "Service Calls",
+    "part": "Part",
+    "part_plural": "Parts",
+    "customer": "Customer",
+    "estimate": "Estimate",
+    "invoice": "Invoice",
+    "permit": "Permit",
+    "certification": "License",
+    "apprentice": "Apprentice",
+    "owner": "Owner",
+    "admin": "Office Manager"
+  },
+  "job_categories": [
+    {"id": "drain", "label": "Drain Cleaning", "icon": "droplets"},
+    {"id": "water_heater", "label": "Water Heater", "icon": "flame"},
+    {"id": "leak", "label": "Leak Repair", "icon": "droplet"},
+    {"id": "sewer", "label": "Sewer Line", "icon": "waves"},
+    {"id": "fixture", "label": "Fixture Install", "icon": "bath"},
+    {"id": "gas", "label": "Gas Line", "icon": "zap"},
+    {"id": "remodel", "label": "Remodel", "icon": "hammer"},
+    {"id": "other", "label": "Other", "icon": "wrench"}
+  ],
+  "priority_levels": [
+    {"id": "emergency", "label": "Emergency", "color": "red"},
+    {"id": "urgent", "label": "Urgent", "color": "orange"},
+    {"id": "normal", "label": "Normal", "color": "blue"},
+    {"id": "low", "label": "Low Priority", "color": "gray"}
+  ],
+  "job_statuses": [
+    {"id": "pending", "label": "Pending", "color": "gray"},
+    {"id": "scheduled", "label": "Scheduled", "color": "blue"},
+    {"id": "en_route", "label": "En Route", "color": "yellow"},
+    {"id": "in_progress", "label": "In Progress", "color": "orange"},
+    {"id": "completed", "label": "Completed", "color": "green"},
+    {"id": "cancelled", "label": "Cancelled", "color": "red"}
+  ],
+  "part_categories": [
+    "pipes", "fittings", "valves", "fixtures",
+    "water_heaters", "tools", "adhesives", "other"
+  ],
+  "domain_context": "You are an AI assistant for a plumbing business. You help manage scheduling, diagnostics, estimates, permits, inventory, customer communication, training, and documentation for residential and commercial plumbing services. You understand plumbing codes (IPC/UPC), common plumbing issues, parts and pricing, and industry best practices.",
+  "diagnostic_prompt_context": "When diagnosing plumbing issues, consider: pipe material and age, water pressure, drainage patterns, fixture types, code compliance, and common failure modes for the identified system. Reference IPC/UPC codes when applicable.",
+  "compliance_context": "Plumbing work is regulated by the International Plumbing Code (IPC) or Uniform Plumbing Code (UPC) depending on jurisdiction. Water heater installations, gas line work, and sewer connections typically require permits. Backflow prevention devices require annual testing.",
+  "default_markup_pct": 50.0,
+  "enabled_modules": [
+    "scheduling", "diagnostics", "estimates", "permits",
+    "inventory", "communication", "training", "documentation"
+  ]
+}

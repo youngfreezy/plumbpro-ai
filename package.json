@@ -1,0 +1,10 @@
+{
+  "name": "plumbpro-ai",
+  "private": true,
+  "scripts": {
+    "start": "bash ./scripts/start-app.sh",
+    "kill": "bash ./scripts/stop-app.sh",
+    "dev": "npm run kill && npm run start",
+    "start:no-docker": "bash ./scripts/start-app.sh --no-docker"
+  }
+}

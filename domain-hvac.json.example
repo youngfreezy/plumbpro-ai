@@ -1,0 +1,59 @@
+{
+  "business_type": "hvac",
+  "app_name": "HVAC Pro AI",
+  "tagline": "AI-powered HVAC business management",
+  "labels": {
+    "technician": "HVAC Technician",
+    "technician_plural": "HVAC Technicians",
+    "job": "Service Call",
+    "job_plural": "Service Calls",
+    "part": "Component",
+    "part_plural": "Components",
+    "customer": "Customer",
+    "estimate": "Estimate",
+    "invoice": "Invoice",
+    "permit": "Permit",
+    "certification": "EPA Certification",
+    "apprentice": "Apprentice",
+    "owner": "Owner",
+    "admin": "Office Manager"
+  },
+  "job_categories": [
+    {"id": "ac_repair", "label": "AC Repair", "icon": "snowflake"},
+    {"id": "heating", "label": "Heating Repair", "icon": "flame"},
+    {"id": "installation", "label": "System Installation", "icon": "settings"},
+    {"id": "maintenance", "label": "Preventive Maintenance", "icon": "calendar"},
+    {"id": "duct_work", "label": "Duct Work", "icon": "wind"},
+    {"id": "thermostat", "label": "Thermostat", "icon": "thermometer"},
+    {"id": "refrigerant", "label": "Refrigerant Service", "icon": "droplets"},
+    {"id": "air_quality", "label": "Indoor Air Quality", "icon": "fan"},
+    {"id": "other", "label": "Other", "icon": "wrench"}
+  ],
+  "priority_levels": [
+    {"id": "emergency", "label": "Emergency", "color": "red"},
+    {"id": "urgent", "label": "Urgent", "color": "orange"},
+    {"id": "normal", "label": "Normal", "color": "blue"},
+    {"id": "low", "label": "Low Priority", "color": "gray"}
+  ],
+  "job_statuses": [
+    {"id": "pending", "label": "Pending", "color": "gray"},
+    {"id": "scheduled", "label": "Scheduled", "color": "blue"},
+    {"id": "en_route", "label": "En Route", "color": "yellow"},
+    {"id": "in_progress", "label": "In Progress", "color": "orange"},
+    {"id": "completed", "label": "Completed", "color": "green"},
+    {"id": "cancelled", "label": "Cancelled", "color": "red"}
+  ],
+  "part_categories": [
+    "compressors", "condensers", "evaporators", "refrigerant",
+    "thermostats", "filters", "ductwork", "motors",
+    "capacitors", "contactors", "relays", "other"
+  ],
+  "domain_context": "You are an AI assistant for an HVAC (Heating, Ventilation, and Air Conditioning) business. You help manage scheduling, diagnostics, estimates, permits, inventory, customer communication, training, and documentation for residential and commercial HVAC services. You understand HVAC systems (split systems, heat pumps, package units, mini-splits, furnaces, boilers), refrigerant handling (EPA 608 certified), electrical components, airflow design, and energy efficiency standards (SEER, AFUE, HSPF ratings).",
+  "diagnostic_prompt_context": "When diagnosing HVAC issues, consider: system type and age, refrigerant levels and type (R-410A, R-22, R-32), airflow measurements, temperature differentials (supply/return), electrical readings (amp draw, voltage, capacitance), thermostat programming, ductwork condition, and filter status. Check for common failure modes: frozen evaporator coils, failed compressors, bad capacitors, refrigerant leaks, dirty coils, blower motor issues, and thermostat malfunctions.",
+  "compliance_context": "HVAC work is regulated by EPA Section 608 for refrigerant handling, local mechanical codes (IMC/UMC), and energy codes (IECC). EPA 608 certification is required for anyone handling refrigerants. Refrigerant must be recovered before disposal. Equipment installations typically require permits and inspections. Systems must meet minimum SEER/AFUE efficiency standards per jurisdiction. ASHRAE standards govern ventilation and indoor air quality requirements.",
+  "default_markup_pct": 45.0,
+  "enabled_modules": [
+    "scheduling", "diagnostics", "estimates", "permits",
+    "inventory", "communication", "training", "documentation"
+  ]
+}
